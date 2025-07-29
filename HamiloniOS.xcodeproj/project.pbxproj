@@ -8,17 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		A489B23F2E30D7D00014D682 /* HamiloniOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A489B23E2E30D7D00014D682 /* HamiloniOSApp.swift */; };
-		A489B2412E30D7D00014D682 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A489B2402E30D7D00014D682 /* ContentView.swift */; };
 		A489B2432E30D7D10014D682 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A489B2422E30D7D10014D682 /* Assets.xcassets */; };
 		A489B2462E30D7D10014D682 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A489B2452E30D7D10014D682 /* Preview Assets.xcassets */; };
+		A4FD0E722E38A97C00EED5EA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FD0E712E38A97C00EED5EA /* ContentView.swift */; };
+		A4FD0E772E38AC7500EED5EA /* ChatVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FD0E762E38AC7500EED5EA /* ChatVO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A489B23B2E30D7CF0014D682 /* HamiloniOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HamiloniOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A489B23E2E30D7D00014D682 /* HamiloniOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HamiloniOSApp.swift; sourceTree = "<group>"; };
-		A489B2402E30D7D00014D682 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A489B2422E30D7D10014D682 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A489B2452E30D7D10014D682 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A4FD0E712E38A97C00EED5EA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A4FD0E762E38AC7500EED5EA /* ChatVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +53,9 @@
 		A489B23D2E30D7D00014D682 /* HamiloniOS */ = {
 			isa = PBXGroup;
 			children = (
+				A4FD0E752E38AC5C00EED5EA /* VO */,
+				A4FD0E742E38A9F200EED5EA /* Screens */,
 				A489B23E2E30D7D00014D682 /* HamiloniOSApp.swift */,
-				A489B2402E30D7D00014D682 /* ContentView.swift */,
 				A489B2422E30D7D10014D682 /* Assets.xcassets */,
 				A489B2442E30D7D10014D682 /* Preview Content */,
 			);
@@ -65,6 +68,22 @@
 				A489B2452E30D7D10014D682 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A4FD0E742E38A9F200EED5EA /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				A4FD0E712E38A97C00EED5EA /* ContentView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		A4FD0E752E38AC5C00EED5EA /* VO */ = {
+			isa = PBXGroup;
+			children = (
+				A4FD0E762E38AC7500EED5EA /* ChatVO.swift */,
+			);
+			path = VO;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +156,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A489B2412E30D7D00014D682 /* ContentView.swift in Sources */,
+				A4FD0E772E38AC7500EED5EA /* ChatVO.swift in Sources */,
+				A4FD0E722E38A97C00EED5EA /* ContentView.swift in Sources */,
 				A489B23F2E30D7D00014D682 /* HamiloniOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
