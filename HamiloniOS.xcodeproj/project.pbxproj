@@ -10,15 +10,20 @@
 		A489B23F2E30D7D00014D682 /* HamiloniOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A489B23E2E30D7D00014D682 /* HamiloniOSApp.swift */; };
 		A489B2432E30D7D10014D682 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A489B2422E30D7D10014D682 /* Assets.xcassets */; };
 		A489B2462E30D7D10014D682 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A489B2452E30D7D10014D682 /* Preview Assets.xcassets */; };
+		A48A60592E39DFCD00FA21BA /* ChatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48A60582E39DFCA00FA21BA /* ChatService.swift */; };
+		A48A605D2E39E00D00FA21BA /* HttpNetworkObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48A605C2E39E00000FA21BA /* HttpNetworkObject.swift */; };
 		A4FD0E722E38A97C00EED5EA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FD0E712E38A97C00EED5EA /* ContentView.swift */; };
 		A4FD0E772E38AC7500EED5EA /* ChatVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FD0E762E38AC7500EED5EA /* ChatVO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A41B1BCF2E3B13800006FA0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		A489B23B2E30D7CF0014D682 /* HamiloniOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HamiloniOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A489B23E2E30D7D00014D682 /* HamiloniOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HamiloniOSApp.swift; sourceTree = "<group>"; };
 		A489B2422E30D7D10014D682 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A489B2452E30D7D10014D682 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A48A60582E39DFCA00FA21BA /* ChatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatService.swift; sourceTree = "<group>"; };
+		A48A605C2E39E00000FA21BA /* HttpNetworkObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpNetworkObject.swift; sourceTree = "<group>"; };
 		A4FD0E712E38A97C00EED5EA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A4FD0E762E38AC7500EED5EA /* ChatVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -53,6 +58,10 @@
 		A489B23D2E30D7D00014D682 /* HamiloniOS */ = {
 			isa = PBXGroup;
 			children = (
+				A41B1BCF2E3B13800006FA0A /* Info.plist */,
+				A48A605E2E39ED7100FA21BA /* test */,
+				A48A605B2E39DFFC00FA21BA /* common */,
+				A48A60572E39DFC000FA21BA /* services */,
 				A4FD0E752E38AC5C00EED5EA /* VO */,
 				A4FD0E742E38A9F200EED5EA /* Screens */,
 				A489B23E2E30D7D00014D682 /* HamiloniOSApp.swift */,
@@ -68,6 +77,29 @@
 				A489B2452E30D7D10014D682 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A48A60572E39DFC000FA21BA /* services */ = {
+			isa = PBXGroup;
+			children = (
+				A48A60582E39DFCA00FA21BA /* ChatService.swift */,
+			);
+			path = services;
+			sourceTree = "<group>";
+		};
+		A48A605B2E39DFFC00FA21BA /* common */ = {
+			isa = PBXGroup;
+			children = (
+				A48A605C2E39E00000FA21BA /* HttpNetworkObject.swift */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		A48A605E2E39ED7100FA21BA /* test */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = test;
 			sourceTree = "<group>";
 		};
 		A4FD0E742E38A9F200EED5EA /* Screens */ = {
@@ -114,7 +146,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1640;
 				TargetAttributes = {
 					A489B23A2E30D7CF0014D682 = {
 						CreatedOnToolsVersion = 14.3;
@@ -157,8 +189,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4FD0E772E38AC7500EED5EA /* ChatVO.swift in Sources */,
+				A48A60592E39DFCD00FA21BA /* ChatService.swift in Sources */,
 				A4FD0E722E38A97C00EED5EA /* ContentView.swift in Sources */,
 				A489B23F2E30D7D00014D682 /* HamiloniOSApp.swift in Sources */,
+				A48A605D2E39E00D00FA21BA /* HttpNetworkObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,8 +233,10 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 486W4DJTAB;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -259,8 +295,10 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 486W4DJTAB;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -287,14 +325,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HamiloniOS/Preview Content\"";
-				DEVELOPMENT_TEAM = 486W4DJTAB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HamiloniOS/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,7 +342,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = HanSeol.HamiloniOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -316,14 +355,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HamiloniOS/Preview Content\"";
-				DEVELOPMENT_TEAM = 486W4DJTAB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HamiloniOS/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -332,7 +372,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = HanSeol.HamiloniOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
