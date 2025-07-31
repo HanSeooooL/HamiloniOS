@@ -7,24 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A41B1BD12E3B2D9A0006FA0A /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41B1BD02E3B2D9A0006FA0A /* SignInView.swift */; };
+		A41B1BD52E3B35910006FA0A /* UserVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41B1BD42E3B358F0006FA0A /* UserVO.swift */; };
+		A41B1BD72E3B387A0006FA0A /* ChattingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41B1BD62E3B38770006FA0A /* ChattingView.swift */; };
+		A41B1BD92E3B3A840006FA0A /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41B1BD82E3B3A7D0006FA0A /* AuthManager.swift */; };
+		A41B1BDB2E3B47780006FA0A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41B1BDA2E3B47750006FA0A /* MainView.swift */; };
+		A41B1BDD2E3B483B0006FA0A /* OptionMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41B1BDC2E3B48320006FA0A /* OptionMenuView.swift */; };
+		A41B1BDF2E3B488C0006FA0A /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41B1BDE2E3B488A0006FA0A /* GraphView.swift */; };
 		A489B23F2E30D7D00014D682 /* HamiloniOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A489B23E2E30D7D00014D682 /* HamiloniOSApp.swift */; };
 		A489B2432E30D7D10014D682 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A489B2422E30D7D10014D682 /* Assets.xcassets */; };
 		A489B2462E30D7D10014D682 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A489B2452E30D7D10014D682 /* Preview Assets.xcassets */; };
 		A48A60592E39DFCD00FA21BA /* ChatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48A60582E39DFCA00FA21BA /* ChatService.swift */; };
 		A48A605D2E39E00D00FA21BA /* HttpNetworkObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48A605C2E39E00000FA21BA /* HttpNetworkObject.swift */; };
-		A4FD0E722E38A97C00EED5EA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FD0E712E38A97C00EED5EA /* ContentView.swift */; };
 		A4FD0E772E38AC7500EED5EA /* ChatVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FD0E762E38AC7500EED5EA /* ChatVO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A41B1BCF2E3B13800006FA0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A41B1BD02E3B2D9A0006FA0A /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		A41B1BD42E3B358F0006FA0A /* UserVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserVO.swift; sourceTree = "<group>"; };
+		A41B1BD62E3B38770006FA0A /* ChattingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChattingView.swift; sourceTree = "<group>"; };
+		A41B1BD82E3B3A7D0006FA0A /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		A41B1BDA2E3B47750006FA0A /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		A41B1BDC2E3B48320006FA0A /* OptionMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionMenuView.swift; sourceTree = "<group>"; };
+		A41B1BDE2E3B488A0006FA0A /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
 		A489B23B2E30D7CF0014D682 /* HamiloniOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HamiloniOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A489B23E2E30D7D00014D682 /* HamiloniOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HamiloniOSApp.swift; sourceTree = "<group>"; };
 		A489B2422E30D7D10014D682 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A489B2452E30D7D10014D682 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A48A60582E39DFCA00FA21BA /* ChatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatService.swift; sourceTree = "<group>"; };
 		A48A605C2E39E00000FA21BA /* HttpNetworkObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpNetworkObject.swift; sourceTree = "<group>"; };
-		A4FD0E712E38A97C00EED5EA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A4FD0E762E38AC7500EED5EA /* ChatVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,7 +117,11 @@
 		A4FD0E742E38A9F200EED5EA /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				A4FD0E712E38A97C00EED5EA /* ContentView.swift */,
+				A41B1BDE2E3B488A0006FA0A /* GraphView.swift */,
+				A41B1BDC2E3B48320006FA0A /* OptionMenuView.swift */,
+				A41B1BDA2E3B47750006FA0A /* MainView.swift */,
+				A41B1BD62E3B38770006FA0A /* ChattingView.swift */,
+				A41B1BD02E3B2D9A0006FA0A /* SignInView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -113,6 +129,8 @@
 		A4FD0E752E38AC5C00EED5EA /* VO */ = {
 			isa = PBXGroup;
 			children = (
+				A41B1BD82E3B3A7D0006FA0A /* AuthManager.swift */,
+				A41B1BD42E3B358F0006FA0A /* UserVO.swift */,
 				A4FD0E762E38AC7500EED5EA /* ChatVO.swift */,
 			);
 			path = VO;
@@ -188,11 +206,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A41B1BD12E3B2D9A0006FA0A /* SignInView.swift in Sources */,
+				A41B1BD72E3B387A0006FA0A /* ChattingView.swift in Sources */,
+				A41B1BDD2E3B483B0006FA0A /* OptionMenuView.swift in Sources */,
+				A41B1BDF2E3B488C0006FA0A /* GraphView.swift in Sources */,
 				A4FD0E772E38AC7500EED5EA /* ChatVO.swift in Sources */,
+				A41B1BDB2E3B47780006FA0A /* MainView.swift in Sources */,
+				A41B1BD52E3B35910006FA0A /* UserVO.swift in Sources */,
 				A48A60592E39DFCD00FA21BA /* ChatService.swift in Sources */,
-				A4FD0E722E38A97C00EED5EA /* ContentView.swift in Sources */,
 				A489B23F2E30D7D00014D682 /* HamiloniOSApp.swift in Sources */,
 				A48A605D2E39E00D00FA21BA /* HttpNetworkObject.swift in Sources */,
+				A41B1BD92E3B3A840006FA0A /* AuthManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

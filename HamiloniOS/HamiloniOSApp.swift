@@ -9,9 +9,16 @@ import SwiftUI
 
 @main
 struct HamiloniOSApp: App {
+    @StateObject var authManager = AuthManager()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if authManager.isLoggedIn {
+                ChattingView()
+                    .environmentObject(authManager)
+            } else {
+                SignInView()
+                    .environmentObject(authManager)
+            }
         }
     }
 }

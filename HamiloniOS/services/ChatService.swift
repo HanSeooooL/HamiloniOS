@@ -7,7 +7,8 @@
 
 import Foundation
 
-class ChatService {
+@MainActor
+class ChatViewModel: ObservableObject {
     func testRequest() async -> String {
         do {
             let response: Response<String> = try await HttpNetworkObject.shared.getRequest(urlstring: "/chat/test")
@@ -38,6 +39,10 @@ class ChatService {
         }
         
         return result
+    }
+    
+    func readAllChat(author: UserVO) async throws -> Array<Chat>? {
+        return nil
     }
 }
 

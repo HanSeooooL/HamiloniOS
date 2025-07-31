@@ -68,7 +68,6 @@ class HttpNetworkObject {
         
         if contentType.contains("application/json") {
             do {
-                print(String(data: data, encoding: .utf8))
                 let formatter = DateFormatter()
                 formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
                 formatter.timeZone = TimeZone(secondsFromGMT: 0)
@@ -91,7 +90,7 @@ class HttpNetworkObject {
     }
 }
 
-enum Response<T:Decodable> {
+enum Response<T:Decodable & Sendable>: Sendable {
     case json(T)
     case string(String)
 }
