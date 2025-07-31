@@ -13,7 +13,7 @@ struct HamiloniOSApp: App {
     var body: some Scene {
         WindowGroup {
             if authManager.isLoggedIn {
-                ChattingView()
+                MainView()
                     .environmentObject(authManager)
             } else {
                 SignInView()

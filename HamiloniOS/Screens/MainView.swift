@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct MainView: View {
+    @EnvironmentObject var authManger: AuthManager
     var body: some View {
         TabView {
             ChattingView()

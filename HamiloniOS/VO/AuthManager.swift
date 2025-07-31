@@ -40,7 +40,7 @@ final class AuthManager: ObservableObject {
                     return false
                 }
                         
-            case .string(let message):
+            case .string(_):
                 throw NetworkError.unsupportedResponse
             }
         }

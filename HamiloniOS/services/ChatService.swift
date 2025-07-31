@@ -32,10 +32,11 @@ class ChatViewModel: ObservableObject {
             let response: Response<Array<Chat>> = try await HttpNetworkObject.shared.getRequest(urlstring: "/chat/startchat")
             switch response {
             case .json(let data):
-                for chat in chatlist {
-                    chatlist.append(ChatVO(author: chat.author, content: chat.content, timestamp: chat.timestamp))
+                for chat in data {
+                    chatlist.append(ChatVO(chat: chat))
                 }
-            case .string(let message):
+            case .string(_):
+                throw ChatServiceError.FileTypeError
             }
         }
     }
