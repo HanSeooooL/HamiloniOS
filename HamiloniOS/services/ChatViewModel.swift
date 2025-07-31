@@ -1,8 +1,8 @@
 //
-//  ChatService.swift
+//  ChatViewModel.swift
 //  HamiloniOS
 //
-//  Created by 한설 on 7/30/25.
+//  Created by 한설 on 7/31/25.
 //
 
 import Foundation
