@@ -12,17 +12,20 @@ struct ChattingView: View {
     @EnvironmentObject var authManager: AuthManager
     @StateObject var chatViewModel = ChatViewModel()
     
-    @State private var chatlist: Array<ChatVO> = [
-        ChatVO(author: "mapaehan", content: "hello", timestamp: Date(timeIntervalSinceNow: 0)),
-        ChatVO(author: "AI", content: "hello user!", timestamp: Date(timeIntervalSinceNow: 2))
-    ]
-    
     @State private var inputmessage: String = ""
+
     
     var body: some View {
         VStack {
             Text("채팅 화면")
-            ChattingContainerView(chattings: chatlist)
+            ChattingContainerView(chattings: chatViewModel.chatlist)
+                .task {
+                    do {
+                        try await chatViewModel.initMessageHistory()
+                    } catch {
+                        print("Error: MessageHistory initialize")
+                    }
+                }
             
             Spacer()
             
@@ -33,13 +36,9 @@ struct ChattingView: View {
                     // 메세지 전송 로직
                     Task {
                         do {
-                            chatlist.append(ChatVO(author: authManager.user!.id, content: inputmessage))
                             let tmpmessage = inputmessage
                             inputmessage = ""
-                            let result = try await chatViewModel.sendChat(chat: Chat(author: authManager.user!.id, content: tmpmessage))
-                            result.print()
-                            chatlist.append(ChatVO(chat: result))
-                            print(chatlist)
+                            try await chatViewModel.sendChat(chat: Chat(author: authManager.user!.id, content: tmpmessage))
                         } catch {
                             print("Error!")
                         }
